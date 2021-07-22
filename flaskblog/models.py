@@ -43,3 +43,13 @@ class Post(db.Model):
 
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"
+
+
+# class Comment(db.Model):
+#     id = db.Column(db.Integer, primary_key=True)
+#     body = db.Column(db.String(100), nullable=False)
+#     timetamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+#     post_id = db.Column(db.Integer, db.ForeignKey("post.id"), nullable=False)
+
+#     def __repr__(self) -> str:
+#         return f"Comment('{self.body}', '{self.timetamp}')"
