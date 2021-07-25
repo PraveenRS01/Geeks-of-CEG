@@ -1,4 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>About Page</h1>
+    <div class="about-section">
+        <h1>About the Blog</h1>
+        <br>
+        <h4>This website is created by Praveen RS</h4>
+        <h5>The entire application is built uisng Python,HTML,Flask and Bootstrap</h5>
+  </div>
+  <br><br>
+  <h2 style="text-align: center;">About the Author</h2>
+  <div class="column">
+    <div class="card">
+      <img class="img-fluid" src="{{ url_for('static', filename='CEG/praveen_rs.jpeg') }}" alt="RSP">
+      <div class="container">
+        <h2>Praveen RS</h2>
+        <h5 class="title">Undergraduate Student in CEG</h5>
+        <p>Contact me at:</p>
+        <p>
+          <a href="http://www.linkedin.com/in/praveenrs01">
+            <button class="button">LinkedIn</button>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
 {% endblock content %}

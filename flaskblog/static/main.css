@@ -14,7 +14,7 @@ h6 {
 }
 
 .bg-steel {
-  background-color: #5f788a;
+  background-color: #110481;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -82,4 +82,66 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+
+.column {
+  float: left;
+  width: fit-content;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(255, 253, 253);
+  margin: 8px;
+}
+
+.card img {
+  height: 300px;
+  width: 300px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f0f3f8;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
