@@ -6,7 +6,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
 
-with open("flaskblog\etc\config.json") as config_file:
+with open("flaskblog/etc/config.json") as config_file:
     config = json.load(config_file)
 
 app = Flask(__name__)
